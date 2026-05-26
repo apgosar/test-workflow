@@ -1,0 +1,14 @@
+name: Sanity Test
+on:
+  push:
+    branches: [main, master]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository Code
+        uses: actions/checkout@v4
+
+      - name: Print Hello World
+        run: echo "Hello World! GitHub Actions are active on this account."
