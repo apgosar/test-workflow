@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone Repository Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Print Hello World
         run: echo "Hello World! GitHub Actions are active on this account."
